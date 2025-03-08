@@ -1,0 +1,21 @@
+{
+    "name": "weijiajia/decrypt-verification-code",
+    "type": "library",
+    "require": {
+        "saloonphp/saloon": "^3.0",
+        "php": "^8.0",
+        "weijiajia/saloonphp-logs-plugin": "dev-main"
+    },
+    "autoload": {
+        "psr-4": {
+            "Weijiajia\\DecryptVerificationCode\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "weijiajia",
+            "email": "shadowmatthew1025@gmail.com"
+        }
+    ],
+    "minimum-stability" : "dev"
+}
