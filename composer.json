@@ -1,7 +1,21 @@
 {
     "name": "weijiajia/decrypt-verification-code",
+    "description": "A PHP package for decoding CAPTCHA verification codes using the jfbym.com cloud service API",
     "type": "library",
     "license": "MIT",
+    "keywords": [
+        "captcha",
+        "verification",
+        "decode",
+        "api",
+        "jfbym"
+    ],
+    "authors": [
+        {
+            "name": "weijiajia",
+            "email": "shadowmatthew1025@gmail.com"
+        }
+    ],
     "require": {
         "saloonphp/saloon": "^3.0",
         "php": "^8.0",
@@ -12,11 +26,21 @@
             "Weijiajia\\DecryptVerificationCode\\": "src/"
         }
     },
-    "authors": [
-        {
-            "name": "weijiajia",
-            "email": "shadowmatthew1025@gmail.com"
+    "autoload-dev": {
+        "psr-4": {
+            "Weijiajia\\DecryptVerificationCode\\Tests\\": "tests/"
         }
-    ],
-    "minimum-stability" : "dev"
+    },
+    "scripts": {
+        "test": "phpunit",
+        "check-style": "phpcs",
+        "fix-style": "phpcbf",
+        "analyse": "phpstan analyse"
+    },
+    "config": {
+        "sort-packages": true,
+        "optimize-autoloader": true
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
