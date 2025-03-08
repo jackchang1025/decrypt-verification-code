@@ -1,6 +1,7 @@
 {
     "name": "weijiajia/decrypt-verification-code",
     "type": "library",
+    "license": "MIT",
     "require": {
         "saloonphp/saloon": "^3.0",
         "php": "^8.0",
