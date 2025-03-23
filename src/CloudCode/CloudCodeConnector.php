@@ -16,8 +16,9 @@ use Saloon\Traits\Plugins\AlwaysThrowOnErrors;
 use Weijiajia\DecryptVerificationCode\Exception\DecryptCloudCodeException;
 use Weijiajia\SaloonphpLogsPlugin\HasLogger;
 use Weijiajia\DecryptVerificationCode\CloudCodeResponseInterface;
+use Weijiajia\SaloonphpLogsPlugin\Contracts\HasLoggerInterface;
 
-class CloudCodeConnector extends Connector
+class CloudCodeConnector extends Connector implements HasLoggerInterface
 {
     use HasLogger;
     use AlwaysThrowOnErrors;
